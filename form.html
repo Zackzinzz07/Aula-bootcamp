@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preencha o Formulário</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Nome</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="yourname"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="youemail@email.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password">Senha</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="xxxxxxxx"
+          minlength="8"
+          maxlength="8"
+          name="password"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cpf">CPF</label>
+        <input
+          type="cpf"
+          name="cpf"
+          id="cpf"
+          placeholder="00000000000"
+          minlength="11"
+          maxlength="11"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Genero:</label>
+        <input id="masculino" name="gender" type="radio" />
+        <label for="masculino">masculino</label>
+        <input id="feminino" name="gender" type="radio" />
+        <label for="feminino">feminino</label>
+      </div>
+
+      <div>
+        Selecione sua região:
+        <select name="região">
+          <option value="sul">sul</option>
+          <option value="norte">norte</option>
+          <option value="leste">leste</option>
+          <option value="oeste">oeste</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="Finalizar" />
+        <input type="reset" value="Redefinir" />
+      </div>
+    </form>
+  </body>
+</html>
